@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body,html {
+  background-color: rgba(237, 245, 252, 0.858);
+}
+
+.div-center{
+  margin: 0 auto;
+}
+
+.w500px {
+  max-width: 500px;
+  width: 100%;
+}
+.w100{
+  width: 100%;
+}
+.my-1{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
