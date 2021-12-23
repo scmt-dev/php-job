@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 <?php include_once 'header.php';?>
 
@@ -21,6 +22,15 @@
 <hr>
   <form action="" method="post">
   <input name="gender" type="radio" value="F" id="f" required>
+=======
+<?php
+$title = 'Sign up';
+include_once 'header.php';
+?>
+ 
+ <h3>Sign Up</h3>
+  <input name="gender" type="radio" value="F" id="f">
+>>>>>>> test
   <label for="f">Female </label>
   <input name="gender" type="radio" value="M" id="m"  required>
   <label for="m">Male</label>
@@ -40,3 +50,18 @@
 
 <?php include_once 'footer.php';?>
 
+<<<<<<< HEAD
+=======
+  <input type="text" placeholder="Fullname">
+  <input type="text" placeholder="Email">
+  <input type="text" placeholder="Username">
+  <input type="password" placeholder="Password">
+  <input type="text" placeholder="Phone">
+  <input type="date" placeholder="Birthday">
+  <textarea name="" placeholder="Address"></textarea>
+
+<?php
+include_once 'footer.php';
+?>
+
+>>>>>>> test

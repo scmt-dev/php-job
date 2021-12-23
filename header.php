@@ -1,6 +1,10 @@
 <?php
-require_once './config/config.php';
+require_once 'config/config.php';
+if(!isset($title)) {
+    $title = 'Welcome to Job in Lao';
+}
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +12,7 @@ require_once './config/config.php';
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>
+<<<<<<< HEAD
     <?php
 if (isset($page_title)) {
     echo $page_title;
@@ -20,3 +25,10 @@ if (isset($page_title)) {
   <link rel="stylesheet" href="<?php echo BASE_URL ?>/assets/css/style.css">
 </head>
 <body>
+=======
+      <?php echo $title; ?>
+  </title>
+  <link rel="stylesheet" href="<?php echo BASE_URL ?>/assets/css/style.css">
+</head>
+<body>
+>>>>>>> test

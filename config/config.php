@@ -1,3 +1,3 @@
 <?php
-
-define('BASE_URL', 'http://localhost/job');
+define('BASE_URL', 'http://localhost/php-job');
+?>
