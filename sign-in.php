@@ -32,10 +32,12 @@ if (isset($_POST['submit'])) {
 include_once 'header.php';
 ?>
 
-<form action="" method="post">
-    <input type="text" name="username" placeholder="Username or Email">
-    <input type="password" name="password" placeholder="Password">
-    <input type="submit" name="submit" value="Sign In">
+<form action="" method="post" class="div-center" style="width:400px">
+    <h3>Sign In</h3>
+    <input type="text" name="username" placeholder="Username or Email" class="control w100 mb">
+    <input type="password" name="password" placeholder="Password"  class="control w100 mb">
+    <input type="submit" name="submit" value="Sign In" class="btn">
+    <a href="sign-up.php">Sign Up</a>
     <div>
         <?php echo $message; ?>
     </div>

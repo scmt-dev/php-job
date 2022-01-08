@@ -21,3 +21,10 @@ body{
     cursor: pointer;
     border-radius: 6px;
 }
+.w100{
+    width: 100%;
+    display: block;
+}
+.mb{
+    margin-bottom: 10px;
+}
