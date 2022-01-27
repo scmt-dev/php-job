@@ -42,14 +42,14 @@ include_once 'header.php';
   <input name="gender" type="radio" value="M" id="m"  required>
   <label for="m">Male</label>
   Fullname
-  <input name="fullname" type="text" placeholder="Fullname" class="w100 my-1" required>
+  <input name="fullname" type="text" placeholder="Fullname" class="w100 form-control my-1" required>
   <input name="email" type="text" placeholder="Email" class="w100" required>
   <input name="username" type="text" placeholder="Username" class="w100 my-1" required>
   <input name="password" type="password" placeholder="Password" class="w100" required>
   <input name="phone" type="text" placeholder="Phone" class="w100 my-1">
   <input name="date" type="date" placeholder="Birthday" class="w100">
   <textarea name="address" placeholder="Address" class="w100 my-1"></textarea>
-  <button name="submit" type="submit" value="submit">Submit</button>
+  <button name="submit" type="submit" class="btn btn-info" value="submit">Submit</button>
     <div class="alert">
       <?php echo $message; ?>
     </div>

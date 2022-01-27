@@ -4,6 +4,10 @@ $title = 'Job in Laos';
 include_once 'header.php';
 ?>
   <h3>Home Page</h3>
+
+  <div class="alert alert-primary" role="alert">
+  Tester
+</div>
   <div>
     <?php
 if (isset($_SESSION['fullname'])) {
