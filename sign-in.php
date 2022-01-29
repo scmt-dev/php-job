@@ -19,8 +19,15 @@ if (isset($_POST['submit'])) {
         if ($checkPassword) {
             $_SESSION['fullname'] = $row->fullname;
             $_SESSION['id'] = $row->id;
-            // redirect to home page
-            header('Location: index.php');
+            $_SESSION['role'] = $row->role;
+            // check if user is admin
+            if ($row->role === 'admin') {
+                // redirect to admin page
+                header('location: admin/index.php');
+            } else {
+                // redirect to user page
+                header('location: index.php');
+            }
         } else {
             $message = '<div class="alert alert-danger">Sing in Fail</div>';
         }

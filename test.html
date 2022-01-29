@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test html</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+
+<body>
+  html page
+  <div id="app">
+    
+    <div v-for="item in jobtype">
+      {{item.type_name}}
+      <button>Edit</button>
+      <button>Delete</button>
+    </div>
+  </div>
+
+  <script>
+    // const rs = fetch('http://localhost/php-job/api/job-type.php')
+    //   .then(response => response.json())
+    //   .then(json => console.log(json))
+
+    var app = new Vue({
+      el: '#app',
+      data: {
+        message: 'Hello Vue!',
+        jobtype: [],
+      },
+      mounted() {
+        this.getData()
+      },
+      methods: {
+        getData:async function() {
+          const rs = await fetch('http://localhost/php-job/api/job-type.php')
+          const json = await rs.json()
+          this.jobtype = json.data
+        }
+      },
+    })
+  </script>
+</body>
+
+</html>
