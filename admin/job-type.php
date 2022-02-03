@@ -1,6 +1,8 @@
 <?php
+
 require_once '../config/db.php';
 $mode = $_GET['mode'] ?? '';
+
 // get parameters from URL
 if (isset($_GET['mode'])) {
     

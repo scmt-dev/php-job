@@ -1,6 +1,7 @@
 <?php
 require_once '../config/db.php';
 $mode = $_GET['mode'] ?? '';
+header("Access-Control-Allow-Origin: *");
 
 // insert job type
 if(isset($_POST['job_type'])) {
@@ -23,6 +24,8 @@ if(isset($_POST['job_type'])) {
   exit();
 }
 
+
+/// get data
 $sql = "SELECT * FROM job_types where inactive=0";
 $result = $db->query($sql);
 

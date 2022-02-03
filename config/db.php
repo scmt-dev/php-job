@@ -1,6 +1,6 @@
 <?php
-// db.php
-$db = new mysqli("localhost", "root", "", "job");
+// connect database
+$db = new mysqli("localhost", "root", "root", "job");
 
 // Check connection
 if ($db->connect_errno) {
